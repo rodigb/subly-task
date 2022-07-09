@@ -5,7 +5,7 @@ import './App.css';
 
 fetch('https://run.mocky.io/v3/a811c0e9-adae-4554-9694-173aa23bc38b')
   .then(response => response.json())
-  .then(data => console.log(data));
+  .then(data => console.log(data)); //a
 
 const App: React.FC = () => {
   return(
