@@ -10,7 +10,8 @@ const App: React.FC = () => {
   //create a function to fetch the api results and assign them.
 
   const [value,setValue]= React.useState<any[]>([])
-  console.log(value)
+  
+  // console.log(value)
   React.useEffect(()=>{
 
     async function fetchResults(){
@@ -21,9 +22,16 @@ const App: React.FC = () => {
 
       setValue(mainInfo)
 
+      for(let i = 0; mainInfo.length>i;i++){
+         console.log(mainInfo[i].languages)
+      }
+    
+
       }
     fetchResults();
   },[])
+
+  
 
 
 
@@ -33,7 +41,8 @@ const App: React.FC = () => {
         <h1>Subly Cards!</h1>
         {value.map((values)=>{
           return(
-            <Card coverImage={values.cover} title={values.name} status ={values.status}></Card> //get's the card component and fills them with the api results.
+             
+            <Card coverImage={values.cover} title={values.name} status ={values.status} lastUpdated = "" languages={values.languages+" " }></Card> //get's the card component and fills them with the api results.
           )
         })}
 
