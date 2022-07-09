@@ -3,9 +3,11 @@ import {Card} from './components/cards'
 
 import './App.css';
 
-fetch('https://run.mocky.io/v3/a811c0e9-adae-4554-9694-173aa23bc38b')
+fetch('https://run.mocky.io/v3/a811c0e9-adae-4554-9694-173aa23bc38b')//fetch api url
   .then(response => response.json())
-  .then(data => console.log(data)); //a
+  .then(data => console.log(data));
+
+
 
 const App: React.FC = () => {
   return(
