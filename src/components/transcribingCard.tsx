@@ -2,6 +2,7 @@ import React from 'react'
 import './cards.css'
  
 import { FaEdit } from 'react-icons/fa';
+import {Bars} from 'react-loading-icons'
  
 
  
@@ -15,23 +16,23 @@ type CardProps = {
     title: string,
     status: string,
     lastUpdated: string,
-    languages: string 
+   
  
     
 
 }
 
-export const Card = ({coverImage, title, status, lastUpdated, languages}: CardProps)  => {
+export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardProps)  => {
     return(
         <div className="card">
             <div className="image-holder">
-            
+
                 <div className="overlay">
-                <div className="languages"><p id="lang">{languages}</p>
-                
+                <div className="languages"><p id="lang"><Bars/></p>
+
                 <button className="edit-btn"><FaEdit></FaEdit></button>
                 </div>
-                
+
 
                 </div>
                 <img src={coverImage}></img>

@@ -1,10 +1,12 @@
 import React from 'react';
 import {Card} from './components/cards'
 import errorImg from './images/error.png'
+import {TranscribingCard} from './components/transcribingCard'
 
 import './App.css';
-
-
+ 
+ 
+ 
 
 const App: React.FC = () => {
 
@@ -35,6 +37,8 @@ const App: React.FC = () => {
     fetchResults();
   },[])
 
+ 
+
   
 
 
@@ -54,7 +58,11 @@ const App: React.FC = () => {
           if(status == "error" || null){ //action for cards with errors
             cover = errorImg
             languages = values.errorMessage
-             
+
+          }
+
+          if (status == "transcribing"){
+              return(<TranscribingCard coverImage={cover} title={values.name} status ={values.status} lastUpdated = ""/>) //if transcribing return the transcribing card.
           }
 
           return(
