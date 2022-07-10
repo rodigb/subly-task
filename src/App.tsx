@@ -2,6 +2,7 @@ import React from 'react';
 import {Card} from './components/cards'
 import errorImg from './images/error.png'
 import {TranscribingCard} from './components/transcribingCard'
+ 
 
 
 import './App.css';
