@@ -114,3 +114,5 @@ test successful
 gh-pages is required (npm install gh-pages --save-dev).
 
 in order to run deployment, use "npm run deployment" in terminal
+
+you can view the task live here: https://rodigb.github.io/subly-task/
