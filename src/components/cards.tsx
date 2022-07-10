@@ -1,5 +1,7 @@
 import React from 'react'
 import './cards.css'
+ 
+import { FaEdit } from 'react-icons/fa';
 
 type CardProps = {
 
@@ -18,7 +20,10 @@ export const Card = ({coverImage, title, status, lastUpdated, languages}: CardPr
             
                 <div className="overlay">
                 <div className="languages"><p>{languages}</p>
+                <button className="edit-btn"><FaEdit></FaEdit></button>
                 </div>
+                
+
                 </div>
                 <img src={coverImage}></img>
 
