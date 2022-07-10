@@ -52,18 +52,18 @@ const App: React.FC = () => {
           var languages = values.languages
           languages = languages.toString()
           languages = languages.toUpperCase();
-         
+
           if(status == "error" || null){ //action for cards with errors
             cover = errorImg
             languages = values.errorMessage
 
           }
 
-          if (status == "transcribing"){
+          if (status == "transcribing"){ //if status is transcribing, return transcribing card instead
               return(<TranscribingCard coverImage={cover} title={values.name} status ={values.status} lastUpdated = ""/>) //if transcribing return the transcribing card.
           }
 
-          return(
+          return( //otherwise return a normal card.
 
             <Card coverImage={cover} title={values.name} status ={values.status} lastUpdated = "" languages={languages }></Card> //get's the card component and fills them with the api results.
           )

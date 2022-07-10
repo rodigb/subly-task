@@ -3,7 +3,7 @@ import './cards.css'
 import { FaEdit } from 'react-icons/fa';
 import {TailSpin} from 'react-loading-icons'
 
-
+// this is a copy of the cards.tsx file. Languages has been removed to fit in loading spinner
 
 type CardProps = {
 
@@ -21,7 +21,8 @@ export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardP
             <div className="image-holder">
 
                 <div className="overlay">
-                <div className="languages"><div className="text-box"><p id="lang"><TailSpin/></p></div>
+                    {/* loading spinner added here */}
+                <div className="languages"><div className="text-box"><p id="lang"><TailSpin/></p></div> 
 
                 </div>
                 </div>
