@@ -30,7 +30,7 @@ export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardP
                 <div className="overlay">
                 <div className="languages"><div className="text-box"><p id="lang"><TailSpin/></p></div>
 
-                <button className="edit-btn"><FaEdit></FaEdit></button>
+                 
                 </div>
 
 
