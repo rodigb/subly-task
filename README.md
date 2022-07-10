@@ -112,3 +112,5 @@ test successful
 # Deployment
 
 gh-pages is required (npm install gh-pages --save-dev).
+
+in order to run deployment, use "npm run deployment" in terminal
