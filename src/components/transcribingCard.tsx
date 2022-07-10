@@ -22,13 +22,13 @@ type CardProps = {
 
 }
 
-export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardProps)  => {
+export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardProps)  => { //Transcribing card
     return(
         <div className="card">
             <div className="image-holder">
 
                 <div className="overlay">
-                <div className="languages"><p id="lang"><Bars/></p>
+                <div className="languages"><div className="text-box"><p id="lang"><Bars/></p></div>
 
                 <button className="edit-btn"><FaEdit></FaEdit></button>
                 </div>
