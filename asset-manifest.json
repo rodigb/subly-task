@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/subly-task/static/css/main.70af1026.css",
+    "main.js": "/subly-task/static/js/main.52fc762e.js",
+    "static/media/error.png": "/subly-task/static/media/error.7b8af0188bd2a5ca0508.png",
+    "index.html": "/subly-task/index.html",
+    "main.70af1026.css.map": "/subly-task/static/css/main.70af1026.css.map",
+    "main.52fc762e.js.map": "/subly-task/static/js/main.52fc762e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70af1026.css",
+    "static/js/main.52fc762e.js"
+  ]
+}
