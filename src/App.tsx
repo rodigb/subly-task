@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card} from './components/cards'
+import errorImg from './images/error.png'
 
 import './App.css';
 
@@ -11,7 +12,7 @@ const App: React.FC = () => {
 
   const [value,setValue]= React.useState<any[]>([])
   
-  // console.log(value)
+  console.log(value)
   React.useEffect(()=>{
 
     async function fetchResults(){
@@ -22,12 +23,15 @@ const App: React.FC = () => {
 
       setValue(mainInfo)
 
-      for(let i = 0; mainInfo.length>i;i++){
-         console.log(mainInfo[i].languages)
-      }
+      // for(let i = 0; mainInfo.length>i;i++){
+      //    console.log(mainInfo[i].languages)
+      // }
+
+     
     
 
       }
+       
     fetchResults();
   },[])
 
@@ -40,9 +44,22 @@ const App: React.FC = () => {
       <header className = "App-header">
         <h1>Subly Cards!</h1>
         {value.map((values)=>{
-          return(
+
+          var cover = values.cover
+          var title = values.name
+          var status = values.status
+          var languages = values.languages
+          console.log(status)
+
+          if(status == "error" || null){
+            cover = errorImg
+            languages = values.errorMessage
              
-            <Card coverImage={values.cover} title={values.name} status ={values.status} lastUpdated = "" languages={values.languages+" " }></Card> //get's the card component and fills them with the api results.
+          }
+
+          return(
+
+            <Card coverImage={cover} title={values.name} status ={values.status} lastUpdated = "" languages={languages+" " }></Card> //get's the card component and fills them with the api results.
           )
         })}
 
