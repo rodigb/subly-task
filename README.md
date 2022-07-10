@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Subly media task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Targets of the task:
+- Fetch media endpoint. COMPLETE
+- Render each Medium into a card: Cover image, Title and Status. COMPLETE
+- Render possible states: "ready", "error", "transcribing". COMPLETE
+
+BONUS:
+
+- Add filters to the top. COMPLETE
+- Create some tests. COMPLETE
+- Deploy creation. COMPLETE
+
 
 ## Available Scripts
 
