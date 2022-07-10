@@ -16,7 +16,7 @@ BONUS:
 
 - [Tech-Stack](#tech-stack)
 - [Cards](#cards)
-- [Designs](#Design and css)
+- [Designs](#Design)
 - [Contributing](#contributing)
 
 ## Tech-Stack
@@ -80,6 +80,6 @@ The transcribing card is the same with the exception of having a loading effect 
 This was imported using a react library (react-loading-library), see more in package.json
 
 
-# Design and css
+# Design
 
 The design of the cards were made to look as close to Subly's color scheme as possible, with the main colours being purple, white and green.
