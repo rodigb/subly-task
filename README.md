@@ -1,6 +1,21 @@
 # Subly media task
 
-Targets of the task:
+
+
+
+# Overview
+
+- [Requirements](#requirements)
+- [Tech-Stack](#tech-stack)
+- [Cards](#cards)
+- [Designs](#Design)
+- [Tests](#tests)
+
+
+# Requirements
+
+Targets of the task (must have):
+
 - Fetch media endpoint. COMPLETE
 - Render each Medium into a card: Cover image, Title and Status. COMPLETE
 - Render possible states: "ready", "error", "transcribing". COMPLETE
@@ -8,16 +23,8 @@ Targets of the task:
 BONUS:
 
 - Add filters to the top. NOT COMPLETE
-- Create some tests. COMPLETE
+- Create some tests. IN PROGRESS
 - Deploy creation. COMPLETE
-
-
-# Overview
-
-- [Tech-Stack](#tech-stack)
-- [Cards](#cards)
-- [Designs](#Design)
-- [Contributing](#contributing)
 
 ## Tech-Stack
 
@@ -83,3 +90,21 @@ This was imported using a react library (react-loading-library), see more in pac
 # Design
 
 The design of the cards were made to look as close to Subly's color scheme as possible, with the main colours being purple, white and green.
+
+# Tests
+
+1. Check if component can be rendered:
+
+```
+test('should render cards component',() => {
+    render(<Card/>);
+    const todoElement = screen.getByTestId('cards-1');
+    expect(todoElement).toBeInTheDocument();
+
+})
+```
+
+test successful
+
+2.
+

@@ -1,12 +1,7 @@
 import React from 'react'
 import './cards.css'
- 
 import { FaEdit } from 'react-icons/fa';
- 
 
- 
-
- 
 
 
 type CardProps = {
@@ -16,14 +11,13 @@ type CardProps = {
     status: string,
     lastUpdated: string,
     languages: string 
- 
-    
+
 
 }
 
 export const Card = ({coverImage, title, status, lastUpdated, languages}: CardProps)  => {
     return(
-        <div className="card">
+        <div data-testid="cards-1" className="card">
             <div className="image-holder">
 
                 <div className="overlay">
@@ -42,7 +36,7 @@ export const Card = ({coverImage, title, status, lastUpdated, languages}: CardPr
 
             </div>
             <div className="text-section">
-                <h1 className="title">
+                <h1 data-testid="title-field" className="title">
                     {title}
 
                 </h1>

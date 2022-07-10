@@ -1,13 +1,8 @@
 import React from 'react'
 import './cards.css'
- 
 import { FaEdit } from 'react-icons/fa';
 import {TailSpin} from 'react-loading-icons'
- 
 
- 
-
- 
 
 
 type CardProps = {
@@ -16,9 +11,7 @@ type CardProps = {
     title: string,
     status: string,
     lastUpdated: string,
-   
- 
-    
+
 
 }
 
@@ -30,10 +23,7 @@ export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardP
                 <div className="overlay">
                 <div className="languages"><div className="text-box"><p id="lang"><TailSpin/></p></div>
 
-                 
                 </div>
-
-
                 </div>
                 <img src={coverImage}></img>
 
