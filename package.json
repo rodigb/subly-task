@@ -14,6 +14,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "fortawesome": "^0.0.1-security",
+    "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
@@ -46,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
   }
 }

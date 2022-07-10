@@ -2,7 +2,7 @@ import React from 'react'
 import './cards.css'
  
 import { FaEdit } from 'react-icons/fa';
-import {Bars} from 'react-loading-icons'
+import {TailSpin} from 'react-loading-icons'
  
 
  
@@ -28,7 +28,7 @@ export const TranscribingCard = ({coverImage, title, status, lastUpdated}: CardP
             <div className="image-holder">
 
                 <div className="overlay">
-                <div className="languages"><div className="text-box"><p id="lang"><Bars/></p></div>
+                <div className="languages"><div className="text-box"><p id="lang"><TailSpin/></p></div>
 
                 <button className="edit-btn"><FaEdit></FaEdit></button>
                 </div>
