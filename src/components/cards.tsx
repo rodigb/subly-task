@@ -25,13 +25,13 @@ export const Card = ({coverImage, title, status, lastUpdated, languages}: CardPr
     return(
         <div className="card">
             <div className="image-holder">
-            
+
                 <div className="overlay">
-                    
+
                 <div className="languages">
-                    
+
                     <div className="text-box"><p id="lang">{languages}</p></div>
-                
+
                 <button className="edit-btn"><FaEdit></FaEdit></button>
                 </div>
                 

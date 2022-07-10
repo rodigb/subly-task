@@ -16,18 +16,18 @@ BONUS:
 
 - [Tech-Stack](#tech-stack)
 - [Cards](#cards)
-- [Support](#support)
+- [Designs](#Design and css)
 - [Contributing](#contributing)
 
 ## Tech-Stack
 
 This task consists of ReactJS with Typescript. Includes HTML and CSS as well.
 
-## Cards
+# Cards
 
-The cards created are within the components folder. The folder contents consist of the CSS for the cards, the original format of cards and an alternative card
+The cards created are within the components folder. The folder contents consist of the CSS for the cards, the original format of cards and an alternative card. I thought it would be easier to have 2 seperate cards for both transcribing and the original / error cards. Having the loading effect caused problems on the original card.
 
-# Original Format
+## Original Format
 
 The original format of the card was as follows:
 
@@ -80,4 +80,6 @@ The transcribing card is the same with the exception of having a loading effect 
 This was imported using a react library (react-loading-library), see more in package.json
 
 
- 
+# Design and css
+
+The design of the cards were made to look as close to Subly's color scheme as possible, with the main colours being purple, white and green.
