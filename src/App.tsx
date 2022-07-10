@@ -44,14 +44,14 @@ const App: React.FC = () => {
       <header className = "App-header">
         <h1>Subly Cards!</h1>
         {value.map((values)=>{
-
+          //declaring variables for values from value.map(api results)
           var cover = values.cover
           var title = values.name
           var status = values.status
           var languages = values.languages
           console.log(status)
 
-          if(status == "error" || null){
+          if(status == "error" || null){ //action for cards with errors
             cover = errorImg
             languages = values.errorMessage
              
