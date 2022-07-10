@@ -10,6 +10,7 @@
 - [Cards](#cards)
 - [Designs](#Design)
 - [Tests](#tests)
+- [Deployment](#deployment)
 
 
 # Requirements
@@ -108,3 +109,6 @@ test successful
 
 2.
 
+# Deployment
+
+gh-pages is required (npm install gh-pages --save-dev).
